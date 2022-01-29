@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="Style.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="Type.css" type="text/css" media="all" />
+  <title>Document</title>
+</head>
+<body>
+    <!--jobs section-->
+  <section id="billboard">
+      <header>
+    <a href="" class="logo">ToWork</a>
+    <div class="menu-toggle">
+      <div class="bol1"></div>
+      <div class="bol2"></div>
+      <div class="bol3"></div>
+    </div>
+    <nav id="io">
+      <ul>
+        <input class="displarge" type="search" name="" placeholder="search" style="padding: 0%; width: 170px; height: 25px;" id="srch">
+        <button class="displarge" type="submit" style="padding:0%; height:25px; ">search</button>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="billboard.html">Jobs</a></li>
+        <li><a href="market.html">Market</a></li>
+        <li><a href="school.html">Tutorials</a></li>
+        <li><a href="template.html">Templates</a></li>
+        <div class="butt">
+          <button onclick="document.getElementById('dark').style.opacity = '0.5' " class="drk">dim</button>
+          <button onclick="document.getElementById('dark').style.opacity = '0' " class="drk">Bright</button>
+        </div>
+      </ul>
+    </nav>
+    <div class="dispsm">
+      <input type="search" name="" id="" Placeholder="Search" />
+      <button>Search</button>
+
+    </div>
+    <div class="clearfix"></div>
+    <section class="dark" id="dark"></section>
+    <script>
+      document.location.hash = "#home"
+      var tog = document.querySelector('.menu-toggle')
+      var nav = document.getElementById('io')
+      tog.addEventListener('click', em)
+      function  em(e) {
+        tog.classList.toggle('active')
+        nav.classList.toggle('active')
+      }
+    </script>
+  </header>
+  <div class="balance"></div>
+  </section>
+  
+</body>
+</html>

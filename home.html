@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ToWork</title>
+  <link rel="stylesheet" href="Style.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="Type.css" type="text/css" media="all" />
+  <script defer src="src/app.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+  <header>
+    <a href="" class="logo">ToWork</a>
+    <div class="menu-toggle">
+      <div class="bol1"></div>
+      <div class="bol2"></div>
+      <div class="bol3"></div>
+    </div>
+    <nav id="io">
+      <ul>
+        <input class="displarge" type="search" name="" placeholder="search" style="padding: 0%; width: 170px; height: 25px;" id="srch">
+        <button class="displarge" type="submit" style="padding:0%; height:25px; ">search</button>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="billboard.html">Jobs</a></li>
+        <li><a href="market.html">Market</a></li>
+        <li><a href="school.html">Tutorials</a></li>
+        <li><a href="template.html">Templates</a></li>
+        <div class="butt">
+          <button onclick="document.getElementById('dark').style.opacity = '0.5' " class="drk">dim</button>
+          <button onclick="document.getElementById('dark').style.opacity = '0' " class="drk">Bright</button>
+        </div>
+      </ul>
+    </nav>
+    <div class="dispsm">
+      <input type="search" name="" id="" Placeholder="Search" />
+      <button>Search</button>
+
+    </div>
+    <div class="clearfix"></div>
+    <section class="dark" id="dark"></section>
+    <script>
+      document.location.hash = "#home"
+      var tog = document.querySelector('.menu-toggle')
+      var nav = document.getElementById('io')
+      tog.addEventListener('click', em)
+      function  em(e) {
+        tog.classList.toggle('active')
+        nav.classList.toggle('active')
+      }
+    </script>
+  </header>
+  <div class="balance"></div>
+  <!--home section-->
+  <section id="home">
+    <!--Welcoming section-->
+    <section id="landing">
+      <div class="landiv">
+        <h1 class="shest">Hello there, </h1>
+        <p id="landp">
+          We find jobs for job seekers we find workers for employers, here is a platform that eases your job related activities.
+        </p>
+        <!-- call to action-->
+   <a href="profile.html"><button class="stalk">Get started</button>
+        </a>
+      </div>
+      <div class="firs">
+        <img src="images/bg3.jpg" alt="" />
+      </div>
+    </section>
+    <!-- abouts-->
+    <section class="about">
+      <div>
+        Are you an Entrepreneur?
+        <ul>
+          <li><a href="school.html">Take courses</a></li>
+          <li><a href="market.html">Advertise your products</a></li>
+        </ul>
+      </div>
+      <div class="">
+        <img src="images/Land.png" alt="">
+      </div>
+      <div>
+        Looking for internship or a job ?
+        <ul>
+          <li><a href="billboard.html">Find jobs</a></li>
+          <li><a href="template.html">Templates for Cvs writing</a></li>
+        </ul>
+      </div>
+      <div class="">
+        <img src="images/Look.png" alt="">
+      </div>
+    </section>
+    <!-- Allow user to login or sign up -->
+  </section>
+</body>
+</html>

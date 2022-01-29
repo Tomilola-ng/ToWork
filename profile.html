@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="Style.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="Type.css" type="text/css" media="all" />
+</head>
+<body>
+    <header>
+    <a href="" class="logo">ToWork<span style="color: hsla(240, 18%, 97%, 0.979); font-weight: lighter; background: transparent; font-size:medium;"></span></a>
+    <div class="menu-toggle">
+      <div class="bol1"></div>
+      <div class="bol2"></div>
+      <div class="bol3"></div>
+    </div>
+    <nav id="io">
+      <ul>
+        <input class="displarge" type="search" name="" placeholder="search" style="padding: 0%; width: 170px; height: 25px;" id="srch">
+        <button class="displarge" type="submit" style="padding:0%; height:25px; ">search</button>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="billboard.html">Jobs</a></li>
+        <li><a href="market.html">Market</a></li>
+        <li><a href="school.html">Tutorials</a></li>
+        <li><a href="template.html">Templates</a></li>
+        <div class="butt">
+          <button onclick="document.getElementById('dark').style.opacity = '0.5' " class="drk">dim</button>
+          <button onclick="document.getElementById('dark').style.opacity = '0' " class="drk">Bright</button>
+        </div>
+      </ul>
+    </nav>
+    <div class="dispsm">
+      <input type="search" name="" id="" Placeholder="Search" />
+      <button>Search</button>
+
+    </div>
+    <div class="clearfix"></div>
+    <section class="dark" id="dark"></section>
+    <script>
+      document.location.hash = "#home"
+      var tog = document.querySelector('.menu-toggle')
+      var nav = document.getElementById('io')
+      tog.addEventListener('click', em)
+      function  em(e) {
+        tog.classList.toggle('active')
+        nav.classList.toggle('active')
+      }
+    </script>
+  </header>
+  <div class="balance"></div>
+  <!--Profile -->
+   <section id="profile">
+ <!-- <div class="container">
+        <h3>Login</h3>
+        <input type="email" name="" id="" placeholder="Email" />
+        <input type="password" name="" id="" placeholder="Password" />
+        <button type="submit">Login</button>
+      </div>
+   -->
+  <div class="wrap">
+      <img src="images/People.jpg" class="pic" alt="picture">
+        <h1 class="comh">Complete your profile</h1>
+      <div class="addressing">
+        <div class="adkids">
+          <div class="cir"></div>
+          <div>
+            <h1>Entrepreneur</h1>
+          </div>
+          <div> <p class="adwrit">  Do you run a business <br> The market is open here
+          </p>
+          </div>
+          <div>
+            <button class="by">
+            <a href="#entre">
+              Sign Up as an Entrepreneur
+</a>
+</button>
+          </div>
+        </div>
+        <div class="adkids">
+          <div class="cir"></div>
+          <div>
+            <h1>Employer</h1>
+          </div>
+          <div> <p class="adwrit">
+   Own a company <br> Hire competent and educated workers
+          </p>
+          </div>
+          <div>
+            <button> <a href="#employ">Sign Up as an Employer</a></button>
+          </div>
+        </div>
+        <div class="adkids">
+          <div class="cir"></div>
+          <div>
+            <h1>Job Seeker</h1>
+          </div>
+          <div>
+          <p class="adwrit">
+      Get employed <br> Find a good job with a decent pay
+          </p>
+          </div>
+          <div>
+            <button>
+            <a href="#jobb">
+              Sign Up as an Job Seeker
+</a>
+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section id="employ" class="wrap">
+      <!--Rep info-->
+      <div class="container">
+        <div class="dinfo">
+          <h1>Representative info</h1>
+ <span class="adwrit">
+            Fill the form below as a representative of your Organization
+ </span>
+        </div>
+        <form>
+        <input type="text" name="" id="" placeholder="FirstName" required=""/>
+        <input type="text" name="" id="" placeholder="LastName" required=""/>
+        <input type="number" name="" id="" placeholder="Number" required />
+        <input type="email" name="" id="" placeholder="Email" required />
+        <input type="password" name="" id="" placeholder="Password" required />
+        <input type="password" name="" id="" placeholder="Confirm" required/>
+        <input type="text" name="" id="" placeholder="Position in Organization" required />
+        <button type="submit">SignUp</button>
+      </form>
+      </div>
+      <!--Company info-->
+      <div class="container">
+        <div class="dinfo">
+          <h1>Organization info</h1>
+          Fill the form below as a representative of your Organization
+        </div>
+        <form>
+        <input type="text" name="" id="" placeholder="Company Name" required=""/>
+        <input type="number" name="" id="" placeholder="Number of Employees" />
+        <input type="email" name="" id="" placeholder="Organization Email" />
+        <input type="text" name="" id="" placeholder="Organization address" />
+        <input type="text" name="" id="" placeholder="Organization Website" />
+   <input type="text" name="" id="" placeholder="Organization Social media" />
+   <input type="text" name="" class="des" id="" placeholder="Organization Description" />
+        <button type="submit">SignUp</button>
+      </form>
+      </div>
+   </section>
+    <section id="entre" class="wrap">
+      <div class="container">
+        <h3>Entrepreneur SignUp</h3>
+        <input type="text" name="" id="" placeholder="Name" />
+        <input type="number" name="" id="" placeholder="Number" />
+        <input type="email" name="" id="" placeholder="Email" />
+        <input type="password" name="" id="" placeholder="Password" />
+        <input type="password" name="" id="" placeholder="Confirm" />
+        <button type="submit">SignUp</button>
+      </div>
+ <!-- <div class="container">
+        <h3>Login</h3>
+        <input type="email" name="" id="" placeholder="Email" />
+        <input type="password" name="" id="" placeholder="Password" />
+        <button type="submit">Login</button>
+      </div>
+   -->
+   </section>
+    <section id="jobb" class="wrap">
+      <div class="container">
+        <h3>JobSeeker SignUp</h3>
+        <input type="text" name="" id="" placeholder="Name" />
+        <input type="number" name="" id="" placeholder="Number" />
+        <input type="email" name="" id="" placeholder="Email" />
+        <input type="password" name="" id="" placeholder="Password" />
+        <input type="password" name="" id="" placeholder="Confirm" />
+        <button type="submit">SignUp</button>
+      </div>
+ <!-- <div class="container">
+        <h3>Login</h3>
+        <input type="email" name="" id="" placeholder="Email" />
+        <input type="password" name="" id="" placeholder="Password" />
+        <button type="submit">Login</button>
+      </div>
+   -->
+   </section>
+  </section>
+</body>
+</html>
